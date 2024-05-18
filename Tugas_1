@@ -1,0 +1,55 @@
+class Motor {
+private String nama;
+private String tipe;
+private int tahun;
+
+    Motor(String nama, String tipe, int tahun) {
+        this.nama = nama; 
+        this.tipe = tipe;
+        this.tahun = tahun;
+    }
+    
+
+    String getNama() {
+        return nama;
+    }
+
+    void setNama(String nama) {
+        this.nama = nama;
+    }
+    
+    String getTipe() {
+        return tipe;
+    }
+
+    void setTipe(String tipe) {
+        this.tipe = tipe;
+    }
+    
+    int getTahun() {
+        return tahun;
+    }
+
+    void setTahun(int tahun) {
+        this.tahun = tahun;
+    }
+
+    void display() {
+        System.out.println("Nama: "+ nama + "\nTipe: "+tipe +"\nTahun: "+tahun );
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Motor jadul = new Motor("Astrea", "Bekjul", 2000);
+        jadul.display();
+        jadul.setNama("Kawasaki Ninja");
+        jadul.setTipe("RR");
+        jadul.setTahun(2002);
+        jadul.display();
+        jadul.setNama("Rx king");
+        jadul.setTipe("Cobra");
+        jadul.setTahun(1990);
+        jadul.display();
+    }
+}
